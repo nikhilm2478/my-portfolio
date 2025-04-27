@@ -1,5 +1,3 @@
-import React from "react";
-
 const experiences = [
   {
     role: "Technology Intern",
@@ -89,7 +87,7 @@ const FeaturedExp = () => {
                   {exp.role}
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {exp.company} &middot; {exp.period}
+                  {exp.company} &middot; {exp.duration}
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   {exp.location}

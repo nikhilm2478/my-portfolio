@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import { useState, FormEvent } from "react";
 
 export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.currentTarget;
     const data = new FormData(form);
 
     await fetch("https://formsubmit.co/nikhilmukher@umass.edu", {
       method: "POST",
-      headers: {
-        Accept: "application/json",
-      },
+      headers: { Accept: "application/json" },
       body: data,
     });
 

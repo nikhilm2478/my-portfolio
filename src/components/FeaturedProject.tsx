@@ -1,4 +1,3 @@
-import React from "react";
 import FeaturedProjectCard from "./FeaturedProjectCard";
 
 const FeaturedProject = () => {

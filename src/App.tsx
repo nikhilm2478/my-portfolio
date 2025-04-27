@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import DarkModeToggle from "./components/DarkModeToggle";
 import FeaturedProject from "./components/FeaturedProject";
 import FeaturedExp from "./components/FeaturedExp";
 import ContactForm from "./components/ContactForm";
 import AboutMe from "./components/AboutMe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Chatbot from "./components/Chatbot";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("about");
