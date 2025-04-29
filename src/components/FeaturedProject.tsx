@@ -40,7 +40,7 @@ const FeaturedProject = () => {
     <section className="px-4 sm:px-6 lg:px-20 py-16 bg-gray-100 dark:bg-gray-950">
       {/* Title Above Grid */}
       <div className="text-left mb-8">
-        <h2 className="text-blue-400 text-4xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
+        <h2 className="text-blue-400 text-xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
           FEATURED PROJECTS
         </h2>
       </div>
