@@ -64,7 +64,7 @@ const FeaturedExp = () => {
     <section className="px-4 sm:px-6 lg:px-20 py-16 bg-gray-100 dark:bg-gray-950">
       {/* Section Title */}
       <div className="text-left mb-8">
-        <h2 className="text-blue-400 text-4xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
+        <h2 className="text-blue-400 text-2xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
           PROFESSIONAL EXPERIENCE
         </h2>
       </div>
@@ -74,7 +74,7 @@ const FeaturedExp = () => {
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg group transition-all duration-300 hover:shadow-cyan-400/40"
+            className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg group transition-all duration-300 hover:shadow-cyan-400/40"
           >
             <div className="flex items-center mb-4">
               <img
@@ -83,29 +83,29 @@ const FeaturedExp = () => {
                 className="w-16 h-16 object-contain mr-4"
               />
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   {exp.role}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-xs text-gray-600 dark:text-gray-400">
                   {exp.company} &middot; {exp.duration}
                 </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-xs text-gray-600 dark:text-gray-400">
                   {exp.location}
                 </p>
               </div>
             </div>
 
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-700 dark:text-gray-300">
+            <ul className="list-disc list-inside space-y-2 mb-4 text-sm text-gray-700 dark:text-gray-300">
               {exp.description.split("\n").map((line, i) => (
                 <li key={i}>{line}</li>
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 text-xs">
               {exp.skills.map((skill, i) => (
                 <span
                   key={i}
-                  className="text-xs font-medium px-2 py-1 rounded bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200"
+                  className="font-medium px-2 py-1 rounded bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200"
                 >
                   {skill}
                 </span>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import DarkModeToggle from "./components/DarkModeToggle";
 import FeaturedProject from "./components/FeaturedProject";
 import FeaturedExp from "./components/FeaturedExp";
@@ -20,7 +21,6 @@ export default function App() {
         }
       });
     }, observerOptions);
-
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
@@ -33,8 +33,7 @@ export default function App() {
       const scrollTop = document.documentElement.scrollTop;
       const scrollHeight =
         document.documentElement.scrollHeight - window.innerHeight;
-      const progress = scrollTop / scrollHeight;
-      setScrollProgress(progress);
+      setScrollProgress(scrollTop / scrollHeight);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -55,7 +54,8 @@ export default function App() {
         loop
         muted
         playsInline
-        className="fixed inset-0 w-full h-full object-contain object-center z-[-1] bg-black"
+        preload="metadata"
+        className="fixed inset-0 w-full h-full object-cover object-center z-[-1] bg-black"
       >
         <source
           src="/FilmSpektakel-tenerife-time-lapses-132677-filmsupply.mp4"
@@ -68,11 +68,10 @@ export default function App() {
         <div
           className="w-full bg-blue-400"
           style={{ height: `${scrollProgress * 100}%` }}
-        ></div>
+        />
       </div>
 
       <header className="fixed top-0 left-0 w-full flex flex-col items-center px-6 py-4 z-20 bg-black/30 backdrop-blur-md">
-        {/* Top Row */}
         <div className="w-full relative flex items-center justify-between">
           <DarkModeToggle />
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -91,7 +90,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Navigation Index */}
         <nav className="w-full mt-4 flex justify-center space-x-8 text-lg uppercase tracking-wide">
           {navItems.map((item) => (
             <a
@@ -108,18 +106,49 @@ export default function App() {
       </header>
 
       <main className="pt-32 p-6 space-y-6 z-10 relative">
-        <section id="about" className="scroll-mt-32">
+        <motion.section
+          id="about"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <AboutMe />
-        </section>
-        <section id="projects" className="scroll-mt-32">
+        </motion.section>
+
+        <motion.section
+          id="projects"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <FeaturedProject />
-        </section>
-        <section id="experience" className="scroll-mt-32">
+        </motion.section>
+
+        <motion.section
+          id="experience"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <FeaturedExp />
-        </section>
-        <section id="contact" className="scroll-mt-32">
+        </motion.section>
+
+        <motion.section
+          id="contact"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <ContactForm />
-        </section>
+        </motion.section>
       </main>
     </div>
   );

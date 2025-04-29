@@ -24,7 +24,7 @@ const FeaturedProjectCard: React.FC<FeaturedProjectProps> = ({
     >
       {/* Text section */}
       <div className="flex-1 text-left z-10 group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform duration-300 ease-out">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
           {title}
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mb-3">{description}</p>

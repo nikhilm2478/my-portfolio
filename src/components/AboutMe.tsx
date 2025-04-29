@@ -24,12 +24,12 @@ const AboutMe = () => {
 
         {/* Bio Section */}
         <div className="md:col-span-2 space-y-6">
-          <h2 className="text-blue-400 text-4xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
+          <h2 className="text-blue-400 text-2xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
             ABOUT ME
           </h2>
 
           {paragraphs.map((text, idx) => (
-            <p key={idx} className="text-xl text-gray-700 dark:text-gray-300">
+            <p key={idx} className="text-base text-gray-700 dark:text-gray-300">
               {text}
             </p>
           ))}
@@ -75,7 +75,7 @@ const AboutMe = () => {
           <motion.span
             key={skill}
             whileHover={{ scale: 1.2 }}
-            className="bg-blue-400/20 text-blue-300 px-6 py-3 rounded-full cursor-pointer shadow hover:shadow-blue-500/50 transition-shadow text-lg"
+            className="bg-blue-400/20 text-blue-300 px-6 py-3 rounded-full cursor-pointer shadow hover:shadow-blue-500/50 transition-shadow text-base"
           >
             {skill}
           </motion.span>

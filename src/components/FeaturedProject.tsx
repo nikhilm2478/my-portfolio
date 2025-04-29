@@ -30,7 +30,7 @@ const FeaturedProject = () => {
       title: "Big Pharma & The Suburban Shift",
       description:
         "Analyzed commercial real estate and external datasets to uncover leasing trends. Built a regression model (R² = 0.61) to support findings. Delivered actionable insights for real estate stakeholders by identifying key leasing drivers, helping explain a 3500% surge in suburban pharma leasing.",
-      tags: ["Python", "Pandas", "Tableu"],
+      tags: ["Python", "Pandas", "Tableau"],
       link: "https://publuu.com/flip-book/860773/1886466",
       image: "/pexels-pixabay-302769.jpg",
     },
