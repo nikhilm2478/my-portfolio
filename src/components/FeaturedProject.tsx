@@ -8,7 +8,7 @@ const FeaturedProject = () => {
         "A personal website built with React and Tailwind CSS, which you happen to be on right now!",
       tags: ["React", "Next.js", "Tailwind", "Vercel"],
       link: "#",
-      image: "/public/IMG_2549.jpeg",
+      image: "/IMG_2549.jpeg",
     },
     {
       title: "Quantum Walk Visualizer",
@@ -16,7 +16,7 @@ const FeaturedProject = () => {
         "Collaborated with a PhD mentor and a team of peers to develop quantum walk algorithms using Qiskit, transforming complex datasets and creating engaging visualizations for democratizing quantum computing insights.",
       tags: ["Python", "Pandas", "Qiskit", "Research"],
       link: "https://ibb.co/Kh4ZrmT",
-      image: "/public/karlis-reimanis-Y31Z6Mf7rys-unsplash.jpg",
+      image: "/karlis-reimanis-Y31Z6Mf7rys-unsplash.jpg",
     },
     {
       title: "Full Stack Recipe Generator",
@@ -24,7 +24,7 @@ const FeaturedProject = () => {
         "Led the development of a full-stack web app for dynamic recipe generation based on user-provided ingredients. Built with startup dev principles and Agile methodologies.",
       tags: ["React", "Next.js", "PostgreSQL", "Flask", "Vercel"],
       link: "https://cs-320-group-7-rose.vercel.app/",
-      image: "/public/anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
+      image: "/anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
     },
     {
       title: "Big Pharma & The Suburban Shift",
@@ -32,7 +32,7 @@ const FeaturedProject = () => {
         "Analyzed commercial real estate and external datasets to uncover leasing trends. Built a regression model (R² = 0.61) to support findings. Delivered actionable insights for real estate stakeholders by identifying key leasing drivers, helping explain a 3500% surge in suburban pharma leasing.",
       tags: ["Python", "Pandas", "Tableu"],
       link: "https://publuu.com/flip-book/860773/1886466",
-      image: "/public/pexels-pixabay-302769.jpg",
+      image: "/pexels-pixabay-302769.jpg",
     },
   ];
 

@@ -14,7 +14,7 @@ const AboutMe = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 items-center">
         {/* Static Profile Image */}
         <motion.img
-          src="/public/1691946511052.jpeg"
+          src="/1691946511052.jpeg"
           alt="Nikhil Mukherjee"
           className="rounded-full shadow-lg border-4 border-blue-400 hover:shadow-blue-500/50 transition-shadow duration-300 w-64 h-64 mx-auto"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -52,8 +52,8 @@ const AboutMe = () => {
               <FaLinkedin size={36} />
             </a>
             <a
-              href="/Nikhil Mukherjee Resume BS.pdf"
-              download="Nikhil Mukherjee Resume BS.pdf"
+              href="/Nikhil_Mukherjee_Resume_BS.pdf"
+              download="Nikhil_Mukherjee_Resume_BS.pdf"
               className="hover:text-blue-500 flex items-center gap-2"
             >
               <FaFileDownload size={30} /> Resume
