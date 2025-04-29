@@ -76,7 +76,7 @@ export default function App() {
         <div className="w-full relative flex items-center justify-between">
           <DarkModeToggle />
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h1 className="text-6xl font-[Audiowide] tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+            <h1 className="text-4xl font-[Audiowide] tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
               NIKHIL MUKHERJEE
             </h1>
           </div>
