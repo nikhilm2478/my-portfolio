@@ -17,7 +17,7 @@ const experiences = [
       "Data Automation",
       "Regulatory Reporting",
     ],
-    logo: "/public/santander_bank_na_logo.jpeg",
+    logo: "/santander_bank_na_logo.jpeg",
   },
   {
     company: "University of Massachusetts Amherst",
@@ -28,7 +28,7 @@ const experiences = [
       "Collectively analyze 100,000+ transcripts and re-calculate the GPA of prospective UMass students using MBHE standards.\n" +
       "Reported directly to the Senior Assistant Director of Admissions.",
     skills: ["Employee Training", "Attention to Detail"],
-    logo: "/public/umassamherst_logo.jpeg",
+    logo: "/umassamherst_logo.jpeg",
   },
   {
     company: "GoApptiv",
@@ -45,7 +45,7 @@ const experiences = [
       "UI Design",
       "Software Development",
     ],
-    logo: "/public/goapptiv_private_limited_logo.jpeg",
+    logo: "/goapptiv_private_limited_logo.jpeg",
   },
   {
     company: "Spocto",
@@ -55,7 +55,7 @@ const experiences = [
     description:
       "Led the development of predictive loan eligibility models using TensorFlow and PyTorch, boosting decision-making accuracy for credit assessments. Engaged with business users to interpret data visualization insights.",
     skills: ["Data Analysis", "Python", "Data Visualization"],
-    logo: "/public/spocto_logo.jpeg",
+    logo: "/spocto_logo.jpeg",
   },
 ];
 
