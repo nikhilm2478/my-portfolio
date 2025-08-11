@@ -23,10 +23,10 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-4 max-w-xl mx-auto bg-black/60 backdrop-blur-md p-6 rounded-2xl shadow-lg text-white relative overflow-hidden"
+      className="space-y-4 w-full max-w-lg sm:max-w-xl mx-auto bg-black/60 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg text-white relative overflow-hidden"
     >
       {/* 🌐 Subheading: Light Blue Glow */}
-      <h3 className="text-2xl text-blue-400 drop-shadow-[0_0_10px_rgba(0,191,255,0.8)] text-center">
+      <h3 className="text-xl sm:text-2xl text-blue-400 drop-shadow-[0_0_10px_rgba(0,191,255,0.8)] text-center">
         Contact Me
       </h3>
 
@@ -49,7 +49,7 @@ export default function ContactForm() {
 
       <textarea
         name="message"
-        rows={4}
+        rows={5}
         placeholder="Your Message"
         required
         className="w-full p-3 rounded bg-black/70 border border-white text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]"

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-4 shadow-inner">
-      <div className="max-w-screen-xl mx-auto flex justify-center space-x-6">
+    <footer className="fixed md:fixed bottom-0 left-0 w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-3 sm:py-4 shadow-inner">
+      <div className="max-w-screen-xl mx-auto px-3 sm:px-0 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm sm:text-base">
         <a
           href="https://twitter.com"
           target="_blank"

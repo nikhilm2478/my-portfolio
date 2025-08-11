@@ -70,15 +70,15 @@ export default function App() {
         />
       </div>
 
-      <header className="fixed top-0 left-0 w-full flex flex-col items-center px-6 py-4 z-20 bg-black/30 backdrop-blur-md">
+      <header className="fixed top-0 left-0 w-full flex flex-col items-center px-4 sm:px-6 py-3 sm:py-4 z-20 bg-black/30 backdrop-blur-md">
         <div className="w-full relative flex items-center justify-between">
-          <div />
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h1 className="text-4xl font-[Audiowide] tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+          <div className="hidden md:block" />
+          <div className="md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl text-center md:text-left font-[Audiowide] tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
               NIKHIL MUKHERJEE
             </h1>
           </div>
-          <div className="flex space-x-6 items-center text-base">
+          <div className="hidden md:flex space-x-4 items-center text-sm md:text-base">
             <a
               href="mailto:nikhilmukher@umass.edu"
               className="hover:text-blue-400 flex items-center gap-1"
@@ -89,7 +89,7 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="w-full mt-4 flex justify-center space-x-8 text-lg uppercase tracking-wide">
+        <nav className="w-full mt-3 sm:mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm sm:text-base uppercase tracking-wide">
           {navItems.map((item) => (
             <a
               key={item.id}

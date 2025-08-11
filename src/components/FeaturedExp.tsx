@@ -61,47 +61,47 @@ const experiences = [
 
 const FeaturedExp = () => {
   return (
-    <section className="px-4 sm:px-6 lg:px-20 py-16 bg-gray-100 dark:bg-gray-950">
+    <section className="px-4 sm:px-6 lg:px-20 py-14 sm:py-16 bg-gray-100 dark:bg-gray-950">
       {/* Section Title */}
-      <div className="text-left mb-8">
-        <h2 className="text-blue-400 text-xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
+      <div className="text-left mb-6 sm:mb-8">
+        <h2 className="text-blue-400 text-lg sm:text-xl font-semibold tracking-widest drop-shadow-[0_0_10px_rgba(0,191,255,0.6)]">
           PROFESSIONAL EXPERIENCE
         </h2>
       </div>
 
       {/* Experience Cards Grid */}
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+      <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg group transition-all duration-300 hover:shadow-cyan-400/40"
+            className="bg-white dark:bg-gray-900 p-4 sm:p-6 rounded-xl shadow-lg group transition-all duration-300 hover:shadow-cyan-400/40"
           >
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-3 sm:mb-4">
               <img
                 src={exp.logo}
                 alt={exp.company}
-                className="w-16 h-16 object-contain mr-4"
+                className="w-12 h-12 sm:w-16 sm:h-16 object-contain mr-3 sm:mr-4"
               />
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
                   {exp.role}
                 </h3>
-                <p className="text-xs text-gray-600 dark:text-gray-400">
+                <p className="text-[11px] sm:text-xs text-gray-600 dark:text-gray-400">
                   {exp.company} &middot; {exp.duration}
                 </p>
-                <p className="text-xs text-gray-600 dark:text-gray-400">
+                <p className="text-[11px] sm:text-xs text-gray-600 dark:text-gray-400">
                   {exp.location}
                 </p>
               </div>
             </div>
 
-            <ul className="list-disc list-inside space-y-2 mb-4 text-sm text-gray-700 dark:text-gray-300">
+            <ul className="list-disc list-inside space-y-2 mb-3 sm:mb-4 text-sm sm:text-base text-gray-700 dark:text-gray-300">
               {exp.description.split("\n").map((line, i) => (
                 <li key={i}>{line}</li>
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-2 text-xs">
+            <div className="flex flex-wrap gap-2 text-[10px] sm:text-xs">
               {exp.skills.map((skill, i) => (
                 <span
                   key={i}
