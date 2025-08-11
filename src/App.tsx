@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import DarkModeToggle from "./components/DarkModeToggle";
 import FeaturedProject from "./components/FeaturedProject";
 import FeaturedExp from "./components/FeaturedExp";
 import ContactForm from "./components/ContactForm";
@@ -73,7 +72,7 @@ export default function App() {
 
       <header className="fixed top-0 left-0 w-full flex flex-col items-center px-6 py-4 z-20 bg-black/30 backdrop-blur-md">
         <div className="w-full relative flex items-center justify-between">
-          <DarkModeToggle />
+          <div />
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-4xl font-[Audiowide] tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
               NIKHIL MUKHERJEE

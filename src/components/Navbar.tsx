@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const { pathname } = useLocation();
@@ -25,7 +24,7 @@ export default function Navbar() {
           Projects
         </Link>
       </div>
-      <ThemeToggle />
+      {/* Theme toggle removed: dark mode forced globally */}
     </nav>
   );
 }

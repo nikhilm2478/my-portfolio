@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 
 const AboutMe = () => {
   const paragraphs = [
@@ -53,10 +53,11 @@ const AboutMe = () => {
             </a>
             <a
               href="/Nikhil_Mukherjee_Resume_BS.pdf"
-              download="Nikhil_Mukherjee_Resume_BS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-blue-500 flex items-center gap-2"
             >
-              <FaFileDownload size={30} /> Resume
+              <FaFileAlt size={30} /> Resume
             </a>
           </div>
         </div>
